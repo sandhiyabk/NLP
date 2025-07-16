@@ -7,11 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1c8r52dSTWggRrHHVxYuU1Q2XQrziy3D5
 """
 
-from textblob import TextBlob
-text="The baby is walking"
-blob=TextBlob(text)
-for word,pos in blob.tags:
-    print(word,pos)
+
 
 import spacy
 text="The baby is walking it's first move"
@@ -20,9 +16,3 @@ doc=nlp(text)
 for token in doc:
     print(token.text,token.pos_)
 
-!python -m textblob.download_corpora
-from textblob import TextBlob
-text="The baby is walking"
-blob=TextBlob(text)
-for word,pos in blob.tags:
-    print(word,pos)
